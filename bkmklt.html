@@ -1,0 +1,65 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+</head>
+<body>
+<h1>EZproxy Bookmarklet</h1>	
+<p><ul><li>
+	<a href="javascript:(function(){
+		var host=location.host;
+		var path=location.pathname;
+		var newlink='http://'+host+'.ezproxy.fiu.edu'+path;
+		window.open(newlink);
+	})();">Full-Text from FIU Library</a> 
+	(Drag the link to the bookmark toolbar!)
+</li></ul></p>
+<p>This is a bookmarket that will reroute a current page through FIU EZproxy.
+	<br/>
+If you have the LibX toolbark installed, you do not need this bookmarklet. Simply select 'Reload Page via XYZ EZproxy' on the menu that appears when you right click.
+	<br/>
+Created by Bohyun Kim on March, 2013. 	
+</p>
+<h2>How to Test</h2>
+<ul>
+	<li>Drag the link above to the bookmark toolbar of your web browser.</li>
+	<li>Click the bookmark when you are on a webpage that has an academic article.</li>
+	<li>It will ask you to log in through the FIU EZproxy.</li>
+	<li>Once you are authenticated and the library has a subscription to the journal, you will will able to get the full-text article on the page.</li>
+	<li>Look at the url and see if it contains .ezproxy.fiu.edu. If it does, the bookmarklet is working.</li>
+</ul>	
+
+<h2>Make One for Your Library</h2>
+	<p>
+		Bookmark title: <input type="text" id="title1" size="40" placeholder="e.g. Full-Text ABC Library"/>
+		<em>e.g. Full-text ABC Library</em>
+		<br/>
+		Library EZproxy Suffix: <input type="text" id="link1" size="31" placeholder="e.g. ezproxy.abc.edu"/>
+		<em>e.g. ezproxy.abc.edu
+		<br/>
+		<button id="b1">Customize</button></em>
+	</p>
+	<p><strong>Copy the following into a text editor and save it as an html file.</strong></p>
+	<ul>
+		<li>Open the file in a web browser and drag your link to the bookmark toolbar.</li>
+	</ul>	
+	<p id="result1" style="color:#F7704F;">**Customized code will appear here.**</p>
+	<p><strong>If you want to make any changes to the code:</strong></p>
+	<textarea rows="10" cols="60"></textarea>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){	
+	  $("#b1").click(function(){
+		var pre="&lt;html&gt; &lt;head&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js&quot;&gt;&lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;a href=&quot;javascript:(function(){ var hst=location.host; alert(hst); var path=location.pathname; var newlink='http://'+hst";
+		var link1=$('#link1').val();
+		var post="'+path; alert(newlink); window.open(newlink); })();&quot;&gt;";
+	  	var title=$("#title1").val();
+	  	var end="&lt;/a&gt; &lt;/body&gt; &lt;/html&gt;";
+	  	var final=$('<div />').html(pre+"+'."+link1+post+title+end).text()
+	  	$('#result1').text(final);
+	    $('textarea').val(final);
+	  });
+	}); // doc ready
+	</script>
+
+</body>
+</html>

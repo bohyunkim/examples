@@ -1,0 +1,35 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+</head>
+<body>
+	<p>
+		This page creates the html-friendly string for a link with a title and a url. 
+		<ul>
+		<li>Fill out the form below and click the button. </li>
+		<li>If the link is messy, clean up first by using the <a href="http://meyerweb.com/eric/tools/dencoder/">URL decoder</a>.</li>
+		<li>Copy and paste the result inside the text area after you are done.</li>
+		</ul>	
+	</p>
+	<p>
+		Title: <input type="text" id="title1" size="100"/><br/>
+		Link: <input type="text" id="link1" size="100"/><br/>
+		<button id="b1">Send to Text Area</button>
+	</p>
+	<p id="result1"></p>
+	<textarea rows="20" cols="80"></textarea>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){	
+	  $("#b1").click(function(){
+	  //  alert('<a href="'+$("#link").val()+'">' + $("#title").val()+"</a>");
+	    $('#result1').text('<li><a href="'+$("#link1").val()+'">' + $("#title1").val()+"</a></li>");
+	    var res1='<li><a href="'+$("#link1").val()+'">' + $("#title1").val()+"</a></li>";
+	    $('textarea').val($('textarea').val()+res1);
+	 //   $('textarea').text(res1);
+	  });
+	}); // doc ready
+	</script>
+	
+</body>
+</html>
