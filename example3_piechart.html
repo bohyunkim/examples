@@ -1,0 +1,23 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    google.load('visualization', '1.0');
+    function drawVisualization() {
+      google.visualization.drawChart({
+         "containerId": "chart",
+         "dataSourceUrl": "'http://spreadsheets.google.com/tq?key=0AqAPbBT_k2VUdHg4X08zMXFMeXRmdURJNUx5blpYUmc&range=A1:B6&gid=1'",
+         //"query":"SELECT ... WHERE ... ",
+         "refreshInterval": 5,
+         "chartType": 'PieChart', //AreaChart, ColumnChart, Table
+         "options": {'title':'Library 2010 Budget - Resources only'}
+       });
+    }
+    google.setOnLoadCallback(drawVisualization);
+  </script>
+  </head>
+  <body style="font-family: Arial;border: 0 none;">
+    <div id="chart" style="width: 600px; height: 400px;"></div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<html >
+  <head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <title>
+  Chicago Census
+  </title>
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+      google.load('visualization', '1', {packages: ['table']});
+  </script>
+  <script type="text/javascript">
+      google.load('visualization', '1', {packages: ['corechart']});
+  </script>
+  <script type="text/javascript">
+    var chart;
+    var chart2;
+    function drawVisualization() {
+       // To see the data that this visualization uses, browse to
+       // https://docs.google.com/spreadsheet/ccc?key=0AhnmGz1SteeGdEVsNlNWWkoxU3ZRQjlmbDdTTjF2dHc&usp=sharing          
+      var query = new google.visualization.Query(
+              'https://docs.google.com/spreadsheet/tq?key=0AhnmGz1SteeGdEVsNlNWWkoxU3ZRQjlmbDdTTjF2dHc&headers=-1');
+        // Send the query with a callback function.
+        query.send(handleQueryResponse);
+    }
+        
+    function handleQueryResponse(response) {
+        if (response.isError()) {
+          alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+          return;
+        }
+      var data = response.getDataTable();
+      chart = new google.visualization.AreaChart(document.getElementById('chart'));
+      chart.draw(data, {title: 'Chicago Census 2010 - Area Chart'});
+      chart2 = new google.visualization.Table(document.getElementById('chart2'));
+      chart2.draw(data, null);
+    } // end of handleQueryResponse()
+    
+  google.setOnLoadCallback(drawVisualization);
+  </script>
+  </head>
+  <body style="font-family: Arial;border: 0 none;">
+    <div id="chart" style="height: 400px; width: 400px;"></div>
+    <div id="chart2" style="height: 800px; width: 400px;"></div>
+  </body>
+</html>
