@@ -9,8 +9,9 @@ RAILS Workshop: Coding for Librarians
 ## Set-up
 
 - A computer with access to the Internet
-- Firefox web browser on your computer
-- Install the Firefox add-on, Firebug : https://addons.mozilla.org/en-US/firefox/addon/firebug/
+- Web browser
+    - Firefox web browser on your computer with the Firebug add-on installed : https://addons.mozilla.org/en-US/firefox/addon/firebug/
+    - Or Chrome web browser (https://developer.chrome.com/devtools)
 - Install Sublime text editor 2: https://www.sublimetext.com/2 
 - Install the package control: https://packagecontrol.io/installation#st2
 - Install the “View In Browser” package in Sublime 2: https://www.codefellows.org/blog/how-to-install-view-in-browser-plugin-in-sublime-text
