@@ -18,7 +18,7 @@ RAILS Workshop: Coding for Librarians
     * Install the package control: https://packagecontrol.io/installation#st2
     * Install the “View In Browser” package in Sublime 2: https://www.codefellows.org/blog/how-to-install-view-in-browser-plugin-in-sublime-text
 
-## If you are not familiar wiht HTML and CSS
+## If you are not familiar with HTML and CSS
 
 - `HTML` tutorial: http://www.w3schools.com/html/default.asp
 - `CSS` tutorial: http://www.w3schools.com/css/default.asp
