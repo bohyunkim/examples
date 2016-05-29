@@ -24,7 +24,7 @@ RAILS Workshop: Coding for Librarians
 https://github.com/jcmeloni/HTMLCSSJSAiO-code/
 - To preview a HTML file in GitHub, add this prefix before the Github url: 
     - **`https://htmlpreview.github.io/?`**
-- Example: https://htmlpreview.github.io/?https://github.com/jcmeloni/HTMLCSSJSAiO-code/blob/master/01/sample.html
+    - Example: https://htmlpreview.github.io/?https://github.com/jcmeloni/HTMLCSSJSAiO-code/blob/master/01/sample.html
 
 ## Javascript
 
