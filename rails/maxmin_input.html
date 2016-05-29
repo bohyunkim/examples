@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <p>Enter numbers separated by a comma. Click the button to find Minimum and Maximum Values!</p>
+  		
+  <input name="textbox1" type="text" id="txt1"/>
+  <input name="buttonExecute" onclick="myFunction5(document.getElementById('txt1').value)" type="button" value="Show" />
+
+  <p id="demo3"></p>
+  <p id="demo4"></p>
+
+  <script>
+  function myFunction5(txt) {
+  	var txt_arr=txt.split(",");
+  	var min=Math.min(...txt_arr);
+  	var max=Math.max.apply(null,txt_arr);
+    document.getElementById("demo3").innerHTML = "Minimum Value = "+Math.min.apply(null, txt_arr);
+    document.getElementById("demo4").innerHTML = "Maximum Value = "+Math.max.apply(null, txt_arr);
+    
+    console.log(typeof txt);
+    console.log(typeof txt_arr);
+    console.log(typeof min);
+  }
+  </script>
+
+</body>
+</html>
