@@ -13,9 +13,10 @@ Workshop: Coding for Librarians
 - Web browser
     - Firefox web browser on your computer with the Firebug add-on installed : https://addons.mozilla.org/en-US/firefox/addon/firebug/
     - Or Chrome web browser (https://developer.chrome.com/devtools)
-- Install Sublime text editor 2: https://www.sublimetext.com/2 
-- Install the package control: https://packagecontrol.io/installation#st2
-- Install the “View In Browser” package in Sublime 2: https://www.codefellows.org/blog/how-to-install-view-in-browser-plugin-in-sublime-text
+
+## Javascript
+
+- `JS` tutorial: http://www.w3schools.com/js/default.asp
 
 ## If you are not familiar with HTML and CSS
 
@@ -26,10 +27,12 @@ https://github.com/jcmeloni/HTMLCSSJSAiO-code/
 - To preview a HTML file in GitHub, add this prefix before the Github url: 
     - **`https://htmlpreview.github.io/?`**
     - Example: https://htmlpreview.github.io/?https://github.com/jcmeloni/HTMLCSSJSAiO-code/blob/master/01/sample.html
+- Set-up for working with HTML
+    - Install Sublime text editor 2: https://www.sublimetext.com/2 
+    - Install the package control: https://packagecontrol.io/installation#st2
+    - Install the “View In Browser” package in Sublime 2: https://www.codefellows.org/blog/how-to-install-view-in-browser-plugin-in-sublime-text
 
-## Javascript
 
-- `JS` tutorial: http://www.w3schools.com/js/default.asp
 
 ## Other learning resources
 
