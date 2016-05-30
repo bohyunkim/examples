@@ -11,8 +11,22 @@ Workshop: Coding for Librarians
 
 - A computer with access to the Internet
 - Web browser
-    - Firefox web browser on your computer with the Firebug add-on installed : https://addons.mozilla.org/en-US/firefox/addon/firebug/
-    - Or Chrome web browser (https://developer.chrome.com/devtools)
+    - Firefox 
+        - Web Console
+        - Or, Firebug: https://addons.mozilla.org/en-US/firefox/addon/firebug/
+    - Or, Chrome 
+        - Devtools (https://developer.chrome.com/devtools)
+
+## Plan
+
+1. variables/operators
+2. data types
+3. functions 
+4. arrays
+5. array methods 
+6. for loop
+7. string object 
+8. string methods
 
 ## Javascript
 
