@@ -12,7 +12,7 @@ Workshop: Coding for Librarians
 - A computer with access to the Internet
 - Web browser
     - Firefox 
-        - Web Console
+        - Web Console (http://www.howtogeek.com/105320/how-to-use-firefoxs-web-developer-tools/)
         - Or, Firebug: https://addons.mozilla.org/en-US/firefox/addon/firebug/
     - Or, Chrome 
         - Devtools (https://developer.chrome.com/devtools)
