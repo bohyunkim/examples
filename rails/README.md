@@ -17,6 +17,11 @@ Workshop: Coding for Librarians
     - Or, Chrome 
         - Devtools (https://developer.chrome.com/devtools)
 
+## Slides
+
+- Part 1: Why Should Librarians Care about Coding? http://www.slideshare.net/bohyunkim/why-care-about-coding
+- Part 2: Coding 101: A hands-on introduction http://www.slideshare.net/bohyunkim/coding-101-handson-workshop
+
 ## Plan
 
 1. variables/operators
@@ -45,13 +50,6 @@ https://github.com/jcmeloni/HTMLCSSJSAiO-code/
     - Install Sublime text editor 2: https://www.sublimetext.com/2 
     - Install the package control: https://packagecontrol.io/installation#st2
     - Install the “View In Browser” package in Sublime 2: https://www.codefellows.org/blog/how-to-install-view-in-browser-plugin-in-sublime-text
-
-
-
-## Slides
-
-- Part 1: Why Should Librarians Care about Coding? http://www.slideshare.net/bohyunkim/why-care-about-coding
-- Part 2: Coding 101: A hands-on introduction http://www.slideshare.net/bohyunkim/coding-101-handson-workshop
 
 ## Other learning resources
 
