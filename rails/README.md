@@ -29,6 +29,11 @@ https://github.com/jcmeloni/HTMLCSSJSAiO-code/
 
 - `JS` tutorial: http://www.w3schools.com/js/default.asp
 
+## Slides
+
+- Part 1: Why Should Librarians Care about Coding? http://www.slideshare.net/bohyunkim/why-care-about-coding
+- Part 2: Coding 101: A hands-on introduction http://www.slideshare.net/bohyunkim/coding-101-handson-workshop
+
 ## Other learning resources
 
 - Codecademy: https://www.codecademy.com/
